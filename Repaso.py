@@ -1,5 +1,5 @@
-USERNAME = 'MichelleS"
-PASSWORD = '130901Ms*
+USERNAME = "MichelleS"
+PASSWORD = "130901Ms*"
 
 attempts = 0
 
@@ -10,6 +10,14 @@ def validar_password(password : str) -> bool:
     """Funcion para validar la longitud del password"""
     if len(password) >= 8:
         return True
+    if not any(c.isupper() for c in password)-> bool:
+       print("La contraseña debe tener al menos una Minuscula")
+     return False
+     return True
+    if not any(c.islower()for c in password)-> bool:
+       print ("La contraseña debe tener al menos una Mayuscula")
+       return False
+       return True
     print('La longitud del password es de 8 caracteres')
     return False
 
