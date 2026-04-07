@@ -6,7 +6,7 @@ contador = 1
 # Ciclo
 while True:
     try:
-        N = int(input("Escribe un número entero positivo: "))
+        N = int(input("\n Escribe un número entero positivo: "))
         if N > 0:
             break
         else:
@@ -19,5 +19,5 @@ while contador <= N:
     if contador % 2 != 0:
         suma_impares = suma_impares + contador
     contador = contador + 1
-print("\n       ---RESULTADO---        \n")
+print("\n           ---RESULTADO---           \n")
 print("La suma de números impares es: ", suma_impares, "\n")

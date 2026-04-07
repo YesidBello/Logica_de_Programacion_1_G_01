@@ -1,6 +1,6 @@
 # Definicion de variables
 datos = []
-print("Ingresa números enteros positivos (para finalizar "
+print("\n INGRESA NUMEROS ENTEROS POSITIVOS (para finalizar "
       "ingresa la palabra ¨fin¨)")
 
 # Ciclo
@@ -8,20 +8,21 @@ while True:
     entrada = input("Ingresa un número: ")
     if entrada.lower() == "fin":
         if len(datos) == 0:
-            print("¡ERROR! Debes ingresar al menos un número para finalizar")
+            print("\n ¡ERROR! Debes ingresar al menos un número "
+                  "para finalizar")
             continue
         else:
             break
     try:
         numero = int(entrada)
         if numero <= 0:
-            print("¡ERROR! El número debe ser mayor a 0")
+            print("\n ¡ERROR! El número debe ser mayor a 0 \n")
             continue
         datos.append(numero)
     except ValueError:
-        print("!NO SE INGRESARON NÚMEROS VÁLIDOS! por favor ingresa solo"
-              " números enteros sin puntos")
-print("\n   ---    RESULTADOS   ---   \n")
+        print("\n !NO SE INGRESARON NÚMEROS VÁLIDOS! por favor ingresa solo"
+              " números enteros (sin puntos) \n")
+print("\n               ---RESULTADOS---               \n")
 
 
 # Proceso matematico

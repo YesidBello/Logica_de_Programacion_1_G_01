@@ -1,0 +1,46 @@
+# Definicion de variables
+datos = []
+print("\n INGRESA NÚMEROS POSITIVOS (para finalizar ingresa "
+      "la palabra ¨fin¨)")
+
+# Ciclo
+while True:
+    entrada = input("Ingresa un número: ")
+    if entrada.lower() == "fin":
+        if len(datos) == 0:
+            print("\n ¡ERROR! Debes ingresar al menos un número "
+                  "para finalizar")
+            continue
+        else: 
+            break
+    try:
+        numero = float(entrada)
+        if numero < 0:
+            print("\n ¡ERROR! El número debe ser "
+                  "mayor a cero \n ")
+            continue
+        datos.append(numero)
+    except ValueError:
+        print("\n !NO SE INGRESARON DIGITOS VÁLIDOS! por favor ingresa solo"
+              " números \n")
+        
+# Proceso matematico
+triangulos_rectangulos = 0
+for z in range(0, len(datos) -2, 3):
+    lado_a = datos(z)
+    lado_b = datos(z + 1)
+    lado_c = datos(z + 2)
+if lado_a > lado_b and lado_a > lado_c:
+    hipotenusa = lado_a
+    cateto_1 = lado_b
+    cateto_2 = lado_c
+elif lado_b > lado_a and lado_b > lado_c:
+    hipotenusa = lado_b
+    cateto_1 = lado_a
+    cateto_2 = lado_c
+elif lado_c > lado_a and lado_c > lado_b:
+    hipotenusa = lado_c
+    cateto_1 = lado_a
+    cateto_2 = lado_b
+     
+        
