@@ -16,4 +16,3 @@ if resultado > 0:
     print(f"Sí hay triángulos rectángulos y son {resultado}")
 else:
     print("No hay ninguno")
-
