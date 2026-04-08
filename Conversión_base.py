@@ -1,3 +1,4 @@
+# Nombre es Temperatura.py
 temperaturas = []
 dia = 0
 while dia < 30:
