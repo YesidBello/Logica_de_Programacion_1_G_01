@@ -12,7 +12,7 @@ while True:
         else:
             print("\n ¡ERROR! El número debe ser mayor a 0 \n")
     except ValueError:
-        print("\n ¡NÚMERO INVÁLIDO! Ingresa solo números enteros \n")
+        print("\n ¡DATO INVÁLIDO! Ingresa solo números enteros \n")
 
 # Proceso matematico
 while contador <= N:
