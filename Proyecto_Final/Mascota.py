@@ -18,20 +18,20 @@ class Adopcion:
   
 
 class Perro:
-   def __init__(self, energia:str, sonido:str)-> None:
+   def __init__(self, energia:str, sonido:str, nombre:str, edad:int, raza:str, salud:str)-> None:
        self.energia =nivel_energia
        self.sonido =sonido_emitido
     
     def mostrar_informacion(self)-> str:
-        return f"El nivel de energía de la mascota es: {self.energia} y el nivel de sonido que emite la mascota es: {self.sonido}"
+        return f"Nombre de la mascota es {self.nombre}, la edad que tiene te la mostraremos en meses y tiene {self.edad} meses,\n la raza a la cual pertenece es: {self.raza} y su estado de salud es: {self.salud}\n, El nivel de energía de la mascota es: {self.energia} y el nivel de sonido que emite la mascota es: {self.sonido}"
   
 class Gato:
-    def __init__(self, independencia:str, sonido:str)-> None:
+    def __init__(self, independencia:str, sonido:str, nombre:str, edad:int, raza:str, salud:str)-> None:
        self.independencia =nivel de independencia
        self.sonido =nivel_emitido
    
     def mostrar_informacion(self)-> str:   
-        return f"El nivel de energía de la mascota es: {self.energia} y el nivel de independencia de la mascota es: {self.independencia}"
+        return f"Nombre de la mascota es {self.nombre}, la edad que tiene te la mostraremos en meses y tiene {self.edad} meses,\n la raza a la cual pertenece es: {self.raza} y su estado de salud es: {self.salud}\n, el nivel de energía de la mascota es: {self.energia} y el nivel de independencia de la mascota es: {self.independencia}"
   
 
   
