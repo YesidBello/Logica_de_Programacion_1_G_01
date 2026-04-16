@@ -45,12 +45,18 @@ class Gato:
   
 # Ejemplo de las respuestas que recibira el codigo
       
-mascota1 = Mascota("Sol","18","Pastor Aleman","Excelente")
-  
-print(mascota1.mostrar_informacion())
+tipo = input("Ingrese el tipo de mascota (Perro/Gato): ")
 
-  
-  
+if tipo.lower() == "perro":
+    mascota1 = Perro("Sol", 18, "Pastor Alemán", "Excelente", "fuerte")
+    print(mascota1.mostrar_informacion())
+
+
+elif tipo.lower() == "gato":
+    mascota1 = Gato("Luna", 5, "Siames", "Falta vacunas", "bajo")
+    print(mascota1.mostrar_informacion())
+
+
   
     
 
