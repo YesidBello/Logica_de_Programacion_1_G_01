@@ -16,12 +16,15 @@ class Perro:
        self.sonido =sonido_emitido
     
     def mostrar_informacion(self)-> str:
-        return f"El nivel de energia de la mascota es {self.energia} y el nivel de sonido qu emite la mascota es {self.sonido}"
+        return f"El nivel de energia de la mascota es {self.energia} y el nivel de sonido que emite la mascota es {self.sonido}"
   
-
-
-  
-
+class Gato:
+    def __init__(self, independencia:str, sonido:str)-> None:
+       self.independencia =nivel de independencia
+       self.sonido =nivel_emitido
+   
+    def mostrar_informacion(self)-> str:   
+        return f"El nivel de energia de la mascota es {self.energia} y el nivel de independencia de la mascota es {self.independencia}"
   
 
   
