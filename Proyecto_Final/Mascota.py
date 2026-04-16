@@ -3,12 +3,18 @@ class Adopcion:
         self.nombre =nombre_mascota 
         self.edad =edadm_mascota
         self.raza =raza_mascota
-        self.salud =salud_mascota
+        self.__salud =salud_mascota
   
     def mostrar_informacion(self)-> str:
-       return f"Nombre de la mascota{self.nombre}, la edad que tiene te la mostraremos en meses{self.edad}\n, la raza a la cual pertenece es{self.raza} y su estado de salud es{self.salud}"
-       
+       return f"Nombre de la mascota {self.nombre}, la edad que tiene te la mostraremos en meses {self.edad} meses,\n la raza a la cual pertenece es {self.raza} y su estado de salud es {self.salud}"
+   
   
+# Ejemplo de las respuestas que recibira el codigo
+      
+mascota1 = Mascota("Sol","18","Pastor Aleman","Excelente")
+  
+print(mascota1.mostrar_informacion())
+
   
   
   
