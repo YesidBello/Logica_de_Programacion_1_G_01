@@ -27,6 +27,18 @@ class Perro:
     def mostrar_informacion(self)-> str:
         return  super().mostrar_informacion() + f", el nivel de la energía de la mascota es: {self.energia} y el nivel de sonido es: {self.sonido}"
 # Se disminuye la inscripcion inecesaria al juntar el super y sumarlo con los datos que nos dan en esta class.
+
+  
+  # Esto es lo que quiero que salga dependiendo si le interese adoptar en las face de finalización para que lo piense bien.  
+   def obtener_cuidados_especificos(self):
+        return "Requiere paseos diarios (3 veces al día) y refuerzo en entrenamiento de obediencia."
+
+    def evaluar_espacio_minimo(self):
+        if self.tamano == "Grande":
+            return "Casa con patio o espacio amplio."
+        return "Apto para apartamento o casa pequeña."
+  
+  
   
 class Gato:
     def __init__(self, nombre:str, edad:int, raza:str, salud:str, independencia:str, sonido:str)-> None:
@@ -36,7 +48,14 @@ class Gato:
     def mostrar_informacion(self)-> str:   
         return super().mostrar_informacion() + f", el nivel de independencia de la mascota es: {self.independencia} y el nivel de sonido es: {self.sonido}"
 
+# Esto seria los elementos para tener en reflexión para adoptar un gato.
   
+   def cuidados_especificos(self):
+        return "Requiere enriquecimiento ambiental vertical (repisas) y rascadores para evitar estrés."
+
+    def evaluar_espacio_minimo(self):
+     
+        return "Apto para cualquier tipo de vivienda con mallas de seguridad en ventanas."
 
   
 
