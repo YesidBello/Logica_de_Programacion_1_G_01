@@ -29,7 +29,7 @@ class Perro:
 # Se disminuye la inscripcion inecesaria al juntar el super y sumarlo con los datos que nos dan en esta class.
 
   
-  # Esto es lo que quiero que salga dependiendo si le interese adoptar en las face de finalización para que lo piense bien.  
+# Esto es lo que quiero que salga dependiendo si le interese adoptar en las face de finalización para que lo piense bien.  
    def obtener_cuidados_especificos(self):
         return "Requiere paseos diarios (3 veces al día) y refuerzo en entrenamiento de obediencia."
 
@@ -54,7 +54,6 @@ class Gato:
         return "Requiere enriquecimiento ambiental vertical (repisas) y rascadores para evitar estrés."
 
     def evaluar_espacio_minimo(self):
-     
         return "Apto para cualquier tipo de vivienda con mallas de seguridad en ventanas."
 
   
