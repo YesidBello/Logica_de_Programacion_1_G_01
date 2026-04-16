@@ -1,10 +1,10 @@
 class Adopcion:
     def __init__(self, nombre:str, edad:int, raza:str, salud:str)-> None:
-        self.nombre =nombre_mascota 
-        self.edad =edad_mascota
-        self.raza =raza_mascota
-        self.__salud =salud_mascota
-        self.sonido =sonido_emitido
+        self.nombre =nombre
+        self.edad =edad
+        self.raza =raza
+        self.__salud =salud
+        self.sonido =sonido
   
 
     def mostrar_informacion(self)-> str:
