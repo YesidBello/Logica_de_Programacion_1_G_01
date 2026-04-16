@@ -9,7 +9,14 @@ class Adopcion:
 
     def mostrar_informacion(self)-> str:
        return f"Nombre de la mascota {self.nombre}, la edad que tiene te la mostraremos en meses {self.edad} meses,\n la raza a la cual pertenece es {self.raza} y su estado de salud es {self.salud}"
-   
+    
+    def actualizar_salud(self, nsalud:str)-> None:
+        self.__salud =nsalud
+
+  
+
+  
+
 class Perro:
    def __init__(self, energia:str, sonido:str)-> None:
        self.energia =nivel_energia
