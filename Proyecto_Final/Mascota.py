@@ -19,20 +19,22 @@ class Adopcion:
 
 class Perro:
    def __init__(self, nombre:str, edad:int, raza:str, salud:str, energia:str, sonido:str)-> None:
-       self.energia =nivel_energia
-       self.sonido =sonido_emitido
+    super().__init__(nombre, edad, raza, salud, energia, sonido)
+# Hace que la información de class Adopcion pasen a esta class y no se repita todo, tambien hace que se puede hacer la herencia.
+       self.energia =energia
+       self.sonido =sonido
     
     def mostrar_informacion(self)-> str:
-        return f"Nombre de la mascota es {self.nombre}, la edad que tiene te la mostraremos en meses y tiene {self.edad} meses,\n la raza a la cual pertenece es: {self.raza} y su estado de salud es: {self.salud}\n, El nivel de energía de la mascota es: {self.energia} y el nivel de sonido que emite la mascota es: {self.sonido}"
+        return  super().mostrar_informacion() + f", el nivel de la energía de la mascota es: {self.energia} y el nivel de sonido es: {self.sonido}"
+# Se disminuye la inscripcion inecesaria al juntar el super y sumarlo con los datos que nos dan en esta class.
   
 class Gato:
     def __init__(self, nombre:str, edad:int, raza:str, salud:str, independencia:str, sonido:str)-> None:
-       self.independencia =nivel de independencia
-       self.sonido =nivel_emitido
+       self.independencia =independencia
+       self.sonido =sonido
    
     def mostrar_informacion(self)-> str:   
-        return f"Nombre de la mascota es {self.nombre}, la edad que tiene te la mostraremos en meses y tiene {self.edad} meses,\n la raza a la cual pertenece es: {self.raza} y su estado de salud es: {self.salud}\n, el nivel de energía de la mascota es: {self.energia} y el nivel de independencia de la mascota es: {self.independencia}"
-  
+        return super().mostrar_informacion() + f", el nivel de independencia de la mascota es: {self.independencia} y el nivel de sonido es: {self.sonido}"
 
   
 
