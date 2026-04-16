@@ -18,7 +18,7 @@ class Adopcion:
   
 
 class Perro:
-   def __init__(self, energia:str, sonido:str, nombre:str, edad:int, raza:str, salud:str)-> None:
+   def __init__(self, nombre:str, edad:int, raza:str, salud:str, energia:str, sonido:str)-> None:
        self.energia =nivel_energia
        self.sonido =sonido_emitido
     
@@ -26,7 +26,7 @@ class Perro:
         return f"Nombre de la mascota es {self.nombre}, la edad que tiene te la mostraremos en meses y tiene {self.edad} meses,\n la raza a la cual pertenece es: {self.raza} y su estado de salud es: {self.salud}\n, El nivel de energía de la mascota es: {self.energia} y el nivel de sonido que emite la mascota es: {self.sonido}"
   
 class Gato:
-    def __init__(self, independencia:str, sonido:str, nombre:str, edad:int, raza:str, salud:str)-> None:
+    def __init__(self, nombre:str, edad:int, raza:str, salud:str, independencia:str, sonido:str)-> None:
        self.independencia =nivel de independencia
        self.sonido =nivel_emitido
    
@@ -48,12 +48,12 @@ class Gato:
 tipo = input("Ingrese el tipo de mascota (Perro/Gato): ")
 
 if tipo.lower() == "perro":
-    mascota1 = Perro("Sol", 18, "Pastor Alemán", "Excelente", "fuerte")
+    mascota1 = Perro("Sol", 18, "Pastor Alemán", "Excelente","alta", "fuerte")
     print(mascota1.mostrar_informacion())
 
 
 elif tipo.lower() == "gato":
-    mascota1 = Gato("Luna", 5, "Siames", "Falta vacunas", "bajo")
+    mascota1 = Gato("Luna", 5, "Siames", "Falta vacunas", "media", "bajo")
     print(mascota1.mostrar_informacion())
 
 
