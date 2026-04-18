@@ -8,7 +8,7 @@ class Adopcion:
   
 
     def mostrar_informacion(self)-> str:
-       return f"Nombre de la mascota es {self.nombre}, la edad que tiene te la mostraremos en meses y tiene {self.edad} meses,\n la raza a la cual pertenece es: {self.raza} y su estado de salud es: {self.salud}"
+       return f"Nombre de la mascota es {self.nombre}, la edad que tiene te la mostraremos en meses y tiene {self.edad} meses,\n y la raza a la cual pertenece es: {self.raza}"
     
     def actualizar_salud(self, nsalud:str)-> None:
         self.__salud =nsalud
